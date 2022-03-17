@@ -1,0 +1,37 @@
+body {
+  background-color: #eecef5;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+
+  margin: 20px 30px;
+}
+
+header {
+  background-color: #fcffc7;
+  padding: 10px 0px 90px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.head-container {
+  background-color: #e8ffff;
+  margin: 0 10px;
+}
+
+.border {
+  border-style: solid;
+  border-color: #7db3de;
+  border-width: 2px;
+}
+
+.web-box {
+  width: 14px;
+  height: 14px;
+
+  border-style: solid;
+  border-color: #2c506e;
+  border-width: 2px;
+}
