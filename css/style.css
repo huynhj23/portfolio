@@ -6,14 +6,41 @@ body {
   margin: 20px 30px;
 }
 
-header {
-  background-color: #fcffc7;
-  padding: 10px 0px 90px;
-}
-
 h1 {
   font-size: 18px;
+}
+
+.primary-background {
+  background-color: #fcffc7;
+  padding: 10px 0px 10px;
+}
+
+.text-margin {
   margin: 0;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.circle-photo {
+  border-radius: 50%;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.center-margin {
+  margin: 0 1%;
+}
+
+.clear {
+  clear: both;
+  background-color: transparent;
+  height: 0;
+  width: 0;
 }
 
 .head-container {
@@ -21,10 +48,30 @@ h1 {
   margin: 0 10px;
 }
 
+.subcontainer {
+  padding: 1%;
+}
+
+.inner-container {
+  float: left;
+  background-color: transparent;
+  height: 500px;
+  width: 280px;
+  min-width: 32.39%;
+}
+
 .border {
   border-style: solid;
   border-color: #7db3de;
   border-width: 2px;
+}
+
+.lcorner-icon {
+  float: left;
+}
+
+.rcorner-icon {
+  float: right;
 }
 
 .web-box {
