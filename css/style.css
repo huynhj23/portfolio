@@ -1,10 +1,21 @@
+/* Includes padding/margins in height/width calculations */
 * {
   box-sizing: border-box;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-fit {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.circle-image {
+  border-radius: 50%;
 }
 
 body {
@@ -15,8 +26,29 @@ body {
   margin: 20px 30px;
 }
 
-h1 {
+.head-font {
   font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.body-font {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+
+  line-height: 2.5em;
+}
+
+.subbanner-font {
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+
+  word-wrap: break-word;
+}
+
+.indent {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .primary-background {
@@ -32,17 +64,21 @@ h1 {
   text-align: center;
 }
 
-.circle-photo {
-  border-radius: 50%;
-}
-
 .center {
   display: block;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 .center-margin {
   margin: 0 1%;
+}
+
+.left-margin {
+  margin-left: 1%;
+}
+
+.right-margin {
+  margin-right: 1%;
 }
 
 .clear {
@@ -56,6 +92,12 @@ h1 {
   clear: right;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
 .head-container {
   background-color: #e8ffff;
   margin: 0 10px;
@@ -65,10 +107,14 @@ h1 {
   padding: 1%;
 }
 
+.padcontainer2 {
+  padding: 5%;
+}
+
 .inner-container {
   float: left;
   background-color: transparent;
-  height: 500px;
+  height: 100%;
   width: 33%;
 }
 
@@ -78,14 +124,31 @@ h1 {
   height: 10%;
   width: 100%;
 
+  padding: 12.5px 5px;
   margin-bottom: 2%;
 }
 
 .inner-subbanner {
   float: left;
   background-color: transparent;
-  height: 89%;
+  height: 100%;
   width: 100%;
+}
+
+.demo-photo {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+.demo-description {
+  background-color: #f5d7e7;
+  float: left;
+  width: 75%;
+}
+
+.demo-description p {
+  margin: 5% 5px;
 }
 
 .border {
