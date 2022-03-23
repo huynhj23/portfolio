@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
 body {
   background-color: #eecef5;
   font-family: "Courier New", Courier, monospace;
@@ -43,12 +52,16 @@ h1 {
   width: 0;
 }
 
+.clear-test {
+  clear: right;
+}
+
 .head-container {
   background-color: #e8ffff;
   margin: 0 10px;
 }
 
-.subcontainer {
+.padcontainer {
   padding: 1%;
 }
 
@@ -56,8 +69,23 @@ h1 {
   float: left;
   background-color: transparent;
   height: 500px;
-  width: 280px;
-  min-width: 32.39%;
+  width: 33%;
+}
+
+.inner-banner {
+  float: left;
+  background-color: transparent;
+  height: 10%;
+  width: 100%;
+
+  margin-bottom: 2%;
+}
+
+.inner-subbanner {
+  float: left;
+  background-color: transparent;
+  height: 89%;
+  width: 100%;
 }
 
 .border {
