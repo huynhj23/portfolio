@@ -3,15 +3,18 @@
   box-sizing: border-box;
 }
 
+/* fixes */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
+/* image styling */
 .img-fit {
   max-width: 100%;
-  min-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 .circle-image {
@@ -23,11 +26,12 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
 
-  margin: 20px 30px;
+  margin: 20px;
 }
 
+/* font related styling */
 .head-font {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
 }
@@ -42,18 +46,11 @@ body {
 .subbanner-font {
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
-
-  word-wrap: break-word;
 }
 
 .indent {
   padding-left: 0.5em;
   padding-right: 0.5em;
-}
-
-.primary-background {
-  background-color: #fcffc7;
-  padding: 10px 0px 10px;
 }
 
 .text-margin {
@@ -64,6 +61,16 @@ body {
   text-align: center;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
+/* list styling */
+.list-no-bullet {
+  list-style-type: none;
+}
+
+/* alignment styling */
 .center {
   display: block;
   margin: auto auto;
@@ -92,9 +99,64 @@ body {
   clear: right;
 }
 
+/* Top navigation Bar */
+.navigation {
+  background-color: #fcffc7;
+  box-sizing: unset;
+  height: 50px;
+  margin: -20px -20px 20px -20px;
+  align-items: baseline;
+}
+
+.navigation a:link {
+  padding: 15px 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.navigation a:visited {
+  color: black;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #7db3de;
+}
+
+.navigation a.active {
+  color: #7db3de;
+}
+
+/* footer styling */
+footer {
+  background-color: #e8ffff;
+  margin: 20px -20px -25px -20px;
+  padding: 15px 50px 50px;
+}
+
+.footer-container {
+  background-color: transparent;
+  height: auto;
+  max-width: 30%;
+  width: 350px;
+}
+
+/* body containers */
+.primary-background {
+  background-color: #fcffc7;
+  padding: 10px 0px 10px;
+  max-width: 1920px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
+  overflow: hidden;
+}
+
+.vflex-container {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -112,9 +174,10 @@ body {
 }
 
 .inner-container {
+  overflow: auto;
   float: left;
-  background-color: transparent;
-  height: 100%;
+  background-color: #fffefe;
+  height: auto;
   width: 33%;
 }
 
@@ -142,7 +205,7 @@ body {
 }
 
 .demo-description {
-  background-color: #f5d7e7;
+  background-color: #fffefe;
   float: left;
   width: 75%;
 }
@@ -157,19 +220,11 @@ body {
   border-width: 2px;
 }
 
+/* icon styling */
 .lcorner-icon {
   float: left;
 }
 
 .rcorner-icon {
   float: right;
-}
-
-.web-box {
-  width: 14px;
-  height: 14px;
-
-  border-style: solid;
-  border-color: #2c506e;
-  border-width: 2px;
 }
