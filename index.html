@@ -4,15 +4,15 @@
 <head>
     <meta charset="utc-8">
     <meta name="author" content="huynhj23">
-    <title>Jacky's Portfolio</title>
+    <title>Jacky's Portfolio - Home</title>
     <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <!-- Navigational Links -->
 <header class="navigation flex-container">
     <a class="active text-margin" href="/index.html">Home</a>
-    <a class="text-margin" href="#">Daemon Killer</a>
-    <a class="text-margin" href="#">Wash Me</a>
+    <a class="text-margin" href="/demo1.html">Daemon Killer</a>
+    <a class="text-margin" href="/demo2.html">Wash Me</a>
 </header>
 
 <!-- Brief Summary of Myself -->
@@ -25,7 +25,6 @@
         <strong>
             <h1 class="head-font text-margin">Jacky's Portfolio</h1>
         </strong>
-
     </div>
     <br>
     <div class="border head-container">
@@ -38,7 +37,6 @@
                     <p class="head-font text-align text-margin">About Me</p>
                 </div>
                 <div class="padcontainer2 border inner-subbanner">
-                    <!-- add flex containers for containers for proper overflow (expand)-->
                     <p class="text-align text-margin subbanner-font child">
                         My name is Jacky and I have recently
                         acquiredmy Bachelor of
@@ -102,8 +100,12 @@
         <br>
         <div class="border head-container">
             <div class="padcontainer flex-container clearfix">
-                <div class="demo-photo border right-margin">
-                    <img class="img-fit" src="img/daemon-killer.png" alt="Daemon Killer">
+                <div class="inner-container right-margin vflex-container-photo">
+                    <div class="demo-photo border">
+                        <img class="img-fit" src="img/daemon-killer.png" alt="Daemon Killer">
+                    </div>
+                    <button onclick="location.href='/demo1.html'" href="/demo1.html" class="under-button body-font">
+                        More Information</button>
                 </div>
                 <div class="demo-description border">
                     <p class="indent text-margin text-align body-font">
@@ -144,8 +146,12 @@
                         leave a review, and get an ETA for home car washing services.
                     </p>
                 </div>
-                <div class="demo-photo border ">
-                    <img class="img-fit" src="img/wash-me.png" alt="Daemon Killer">
+                <div class="inner-container right-margin vflex-container-photo">
+                    <div class=" demo-photo border ">
+                        <img class=" img-fit" src="img/wash-me.png" alt="Daemon Killer">
+                    </div>
+                    <button onclick="location.href='/demo2.html'" class="under-button body-font">
+                        More Information</button>
                 </div>
             </div>
             <div class="clear"></div>
