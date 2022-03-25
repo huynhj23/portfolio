@@ -148,18 +148,6 @@ footer {
   max-width: 1920px;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-.vflex-container {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
 .head-container {
   background-color: #e8ffff;
   margin: 0 10px;
@@ -183,7 +171,7 @@ footer {
 
 .inner-banner {
   float: left;
-  background-color: transparent;
+  background-color: #fffefe;
   height: 10%;
   width: 100%;
 
@@ -193,15 +181,38 @@ footer {
 
 .inner-subbanner {
   float: left;
-  background-color: transparent;
+  background-color: #fffefe;
   height: 100%;
   width: 100%;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.vflex-container {
+  background-color: #e8ffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 33%;
+}
+
+.vflex-container-photo {
+  background-color: #e8ffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 25%;
 }
 
 .demo-photo {
   float: left;
-  height: 100%;
-  width: 25%;
+  height: auto;
+  width: 100%;
+
+  margin-bottom: 5px;
 }
 
 .demo-description {
@@ -227,4 +238,16 @@ footer {
 
 .rcorner-icon {
   float: right;
+}
+
+/* button styling */
+.under-button {
+  background-color: #eecef5;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.under-button:hover {
+  background-color: #dfaeeb;
 }
