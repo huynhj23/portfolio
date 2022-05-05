@@ -29,6 +29,10 @@ body {
   margin: 20px;
 }
 
+.wash-me-bg {
+  background-color: #166273;
+}
+
 /* font related styling */
 .head-font {
   font-size: 20px;
@@ -284,4 +288,12 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.fixed-bg-demo2 {
+  background-image: url("/img/wash-me-icon.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
