@@ -29,6 +29,10 @@ body {
   margin: 20px;
 }
 
+.wash-me-bg {
+  background-color: #166273;
+}
+
 /* font related styling */
 .head-font {
   font-size: 20px;
@@ -48,9 +52,13 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
-.indent {
+.text-padding {
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+.paragraph-tab {
+  text-indent: 4em;
 }
 
 .text-margin {
@@ -148,11 +156,21 @@ footer {
   max-width: 1920px;
 }
 
+.primary-background-t {
+  background-color: #fcffc7d2;
+  padding: 10px 0px 10px;
+  max-width: 1920px;
+}
+
 .head-container {
   background-color: #e8ffff;
   margin: 0 10px;
 }
 
+.head-container-t {
+  background-color: #e8ffff8c;
+  margin: 0 10px;
+}
 .padcontainer {
   padding: 1%;
 }
@@ -207,6 +225,12 @@ footer {
   width: 25%;
 }
 
+.vflex-container-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .demo-photo {
   float: left;
   height: auto;
@@ -217,6 +241,12 @@ footer {
 
 .demo-description {
   background-color: #fffefe;
+  float: left;
+  width: 75%;
+}
+
+.demo-description-t {
+  background-color: #fffefe8c;
   float: left;
   width: 75%;
 }
@@ -250,4 +280,20 @@ footer {
 
 .under-button:hover {
   background-color: #dfaeeb;
+}
+
+.fixed-bg-demo1 {
+  background-image: url("/img/daemon-killer.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fixed-bg-demo2 {
+  background-image: url("/img/wash-me-icon.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
