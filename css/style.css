@@ -264,10 +264,12 @@ footer {
 /* icon styling */
 .lcorner-icon {
   float: left;
+  max-width: 22px;
 }
 
 .rcorner-icon {
   float: right;
+  max-width: 22px;
 }
 
 /* button styling */
